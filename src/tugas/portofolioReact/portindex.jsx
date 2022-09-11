@@ -51,7 +51,7 @@ export default class Style extends React.Component{
                     </table>
                     </div>
                     <br/>
-                    <form action="https://youtu.be/WBdV09UbtlA&t=15s">
+                    <form action=''>
                         <h2>Contact Me!</h2>
                         <label for="fname"> First Name </label>
                             <input type='text' />
