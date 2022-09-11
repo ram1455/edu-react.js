@@ -1,14 +1,10 @@
-import Style from "./tugas/portofolioReact/portindex";
+import Style from "./tugas";
 
 function App() {
   return (
     <div className="App">
-      <Style />
-      <div class="container">
-
-
+          <Style/>
       </div>
-    </div>
   );
 }
 
