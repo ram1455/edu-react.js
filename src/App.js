@@ -1,9 +1,14 @@
-import Komponen from "./materi/Komponen";
+
+import Style from "./tugas/portofolioReact/portindex";
 
 function App() {
   return (
     <div className="App">
-      <Komponen />
+      <Style />
+      <div class="container">
+
+
+      </div>
     </div>
   );
 }

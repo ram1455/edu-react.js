@@ -1,0 +1,109 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: Century Gothic;
+    background-image: url(sdd.png);
+    margin: 0;
+}
+
+span{
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.bar{
+    height: 40px;
+    background-color: rgb(37, 37, 37);
+    line-height: 40px;
+    font-size: 20px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: white;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color:  white;
+}
+
+.title{
+    
+    font-family: 'Pacifico';
+	font-size: 100px;
+	color: white;
+	text-align: center;
+	text-shadow: 7px 7px 1px black, 0px 0px 10px black;
+    transition: 1s;
+}
+
+.title:hover{
+    transform: scale(1.1);
+}
+
+.subtitle{
+    margin: 60px 0px 10px 40px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    margin: 10px 40px;
+    text-align: justify;
+}
+h2{
+    margin: 20px 0px 0px 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills {
+    margin: 10px 60px;
+}
+
+.table {
+    margin: 5px 0px 10px 40px;
+    border: 2px solid rgb(37, 37, 37);
+}
+td{
+    border: 1px solid rgb(37, 37, 37);
+}
+
+form h2{
+    margin: 0px 0px 5px 0px;
+}
+ input{
+    
+    display: block;
+ }
+
+ form{
+    width: fit-content;
+    margin: 0px auto;
+ }
+
+ button{
+    margin: 10px 0px 0px 40px;
+ }
