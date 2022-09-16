@@ -1,9 +1,9 @@
-import Style from "./tugas";
+import TheForm from "./tugas/FormValidation";
 
 function App() {
   return (
     <div className="App">
-          <Style/>
+          <TheForm/>
       </div>
   );
 }
