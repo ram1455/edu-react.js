@@ -18,8 +18,8 @@ const RadioFoam =({label, type, nama1, nama2,value, onChange,checked})=>{
             <label>
                 {label}:
                 <br/>
-                <input type={type} name={value} value={nama1} onChange={e=> onChange(e.target.value)}checked={checked} /> {nama1}
-                <input type={type} name={value} value={nama2} onChange={e=> onChange(e.target.value)}checked={checked}/> {nama2}
+                <input type={type} name={value} value={nama1} onChange={e=> onChange(e.target.value)} checked={checked} /> {nama1}
+                <input type={type} name={value} value={nama2} onChange={e=> onChange(e.target.value)} defaultChecked={checked} checked={checked}/> {nama2}
             </label>
             <br/>
             <br/>

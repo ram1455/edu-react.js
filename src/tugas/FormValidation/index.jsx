@@ -21,16 +21,17 @@ export default class TheForm extends React.Component{
     handleSubmit=event=>{
         event.preventDefault();
         alert(`
-        nama:${this.state.nama}
-        hobi:${this.state.hobi}
-        alamat:${this.state.alamat}
-        gender:${this.state.gender}
+        nama: ${this.state.nama}
+        hobi: ${this.state.hobi}
+        alamat: ${this.state.alamat}
+        gender: ${this.state.gender}
         `)
 
         this.setState({
-            nama:'',
+        nama:'',
         hobi:'',
         alamat:'',
+        gender:''
 
         })
     }
