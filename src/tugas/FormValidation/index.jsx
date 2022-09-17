@@ -10,16 +10,46 @@ const Styled = styled.div
     padding:45px;
     box-sizing:border-box;
 `
+const ShowError = (errors)=> {
+    return(
+        <ul style={{color:'red', marginLeft:'-20px'}}>
+            {
+                errors.map((error)=> <li>{error}</li>)
+            }
+        </ul>
+        )
+}
+
 export default class TheForm extends React.Component{
     state ={
         nama:'',
         hobi:'',
         alamat:'',
-        gender:''
+        gender:'',
+        errors:[]
     }
 
-    handleSubmit=event=>{
+
+
+    handleSubmit= event=>{
         event.preventDefault();
+        const [nama, gender, hobi, alamat]= this.state
+        let message=[];
+        if (nama.length === 0) {
+            message= [...message, "nama tidak boleh kosong"]
+        } if (gender.length === 0){
+            message= [...message, "jenis kelamin tidak boleh kosong"]
+        } if (hobi.length === 0){
+            message= [...message, "jenis kelamin tidak boleh kosong"]
+        } if (alamat.length === 0){
+            message= [...message, "jenis kelamin tidak boleh kosong"]
+        }
+        if (message.length > 0) {
+            this.setState({
+                errors : message
+            })}
+        
+
         alert(`
         nama: ${this.state.nama}
         hobi: ${this.state.hobi}
@@ -40,6 +70,9 @@ export default class TheForm extends React.Component{
 
         return(
             <Styled>
+            {
+                    this.state.errors && <ShowError errors={this.state.errors}/>
+            }
             <form onSubmit={this.handleSubmit}>
 
             <InputFoam label="Nama"
