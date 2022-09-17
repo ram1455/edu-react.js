@@ -36,7 +36,7 @@ export default class Form extends React.Component{
             message= [...message,"password tidak boleh kosong"]
         } 
 
-        const re =/[a-zA-Z0-9]+[\.]?([a-zA-Z0-9]+)?[\@][a-z]{3,9}[\.][a-z]{2,5}/g;
+        const re =/[a-zA-Z0-9]+[\.]?([a-zA-Z0-9]+)?[\@][a-z]{3,9}[\.][a-z]{2,5}/g; //eslint-disable-line
         if (!re.test(String(email).toLowerCase()) && email.length >=1 ){
             message = [...message, 'Email tidak valid'];
 
