@@ -1,9 +1,12 @@
-import Form from "./tugas/cobaLagi/Form";
+
+
+import SearchCard from "./tugas/lastNewsApi/searchCard";
+
 
 function App() {
   return (
     <div className="App">
-    <Form/>
+    <SearchCard/>
       </div>
   );
 }
