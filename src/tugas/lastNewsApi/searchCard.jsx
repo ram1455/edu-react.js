@@ -15,7 +15,7 @@ export default class SearchCard extends React.Component{
     
     async componentDidMount(){
         const {searchValue} = this.state
-            await fetch(`https://newsapi.org/v2/everything?q=${searchValue}&from=2022-09-19&sortBy=popularity&apiKey=0efba900083044c9b7164ad2da8f3d19`)
+            await fetch(`https://newsapi.org/v2/everything?q=${searchValue}&from=2022-09-19&sortBy=popularity&apiKey=8e43ceee3eb84a2aa9ccce147385e73c   `)
             .then((resp)=> resp.json())
             .then((json)=> {
                 this.setState({
