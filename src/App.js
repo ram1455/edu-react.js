@@ -1,5 +1,3 @@
-
-
 import SearchCard from "./tugas/lastNewsApi/searchCard";
 
 

@@ -50,7 +50,5 @@ export default class News extends React.Component{
                 </Row>
             </Container>  
         )
-
-
     }
 }

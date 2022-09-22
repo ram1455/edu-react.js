@@ -15,7 +15,8 @@ export default class SearchCard extends React.Component{
     
     async componentDidMount(){
         const {searchValue} = this.state
-            await fetch(`https://newsapi.org/v2/everything?q=${searchValue}&from=2022-09-19&sortBy=popularity&apiKey=8e43ceee3eb84a2aa9ccce147385e73c   `)
+            await fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=${searchValue}&from=2022-09-22&sortBy=popularity&apiKey=1033aecce70049c1b495e6fce89408d0
+            `)
             .then((resp)=> resp.json())
             .then((json)=> {
                 this.setState({
@@ -26,18 +27,7 @@ export default class SearchCard extends React.Component{
 
     handleSubmit=(event)=> {
         event.preventDefault();
-        this.setState({searchValue : event.target[0].value}, ()=> console.log(this.state.searchValue))
-    }
-    componentDidUpdate(){
-        const {searchValue} = this.state
-            fetch(`https://newsapi.org/v2/everything?q=${searchValue}&from=2022-09-19&sortBy=popularity&apiKey=1033aecce70049c1b495e6fce89408d0`)
-            .then((resp)=> resp.json())
-            .then((json)=> {
-                this.setState({
-                    items   : json.articles
-                })
-            })
-
+        this.setState({searchValue : event.target.value}, ()=> console.log(this.state.searchValue))
     }
     render(){
         const {items} = this.state;
